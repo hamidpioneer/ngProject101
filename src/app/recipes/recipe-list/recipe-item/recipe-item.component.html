@@ -1,3 +1,9 @@
-<p>
-  recipe-item works!
-</p>
+<a href="#" class="list-group-item d-flex flex-row">
+  <div class="d-flex flex-fill flex-column">
+    <h4 class="list-group-item-heading"> {{ recipe.name}} </h4>
+    <p class="list-group-item-text"> {{ recipe.description }} </p>
+  </div>
+  <span class="d-flex align-self-center justify-content-center">
+    <img [src]="recipe.imagePath" alt="" class="img-responsive" style="max-height: 50px">
+  </span>
+</a>
