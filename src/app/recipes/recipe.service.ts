@@ -1,6 +1,10 @@
+import { EventEmitter } from '@angular/core';
+
 import { Recipe } from './recipe.model';
 
 export class RecipeService {
+
+    recipeSelected = new EventEmitter<Recipe>();
 
     private recipes: Recipe[] = [
         new Recipe('Test Recipe1', 'This is test1 desc', '../../../assets/images/angular-material.png'),
