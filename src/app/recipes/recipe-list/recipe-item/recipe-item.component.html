@@ -1,7 +1,8 @@
 <a 
   style="cursor: pointer"
   [routerLink]="[index]"
-  class="list-group-item d-flex flex-row">
+  routerLinkActive="active"
+  class="list-group-item d-flex flex-row ">
   <div class="d-flex flex-fill flex-column">
     <h4 class="list-group-item-heading"> {{ recipe.name}} </h4>
     <p class="list-group-item-text"> {{ recipe.description }} </p>
