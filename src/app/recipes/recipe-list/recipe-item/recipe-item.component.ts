@@ -11,9 +11,16 @@ import { RecipeService } from '../../recipe.service';
 export class RecipeItemComponent implements OnInit {
 
   @Input() recipe: Recipe;
+  @Input() index: number;
+
+  // myRecipe: Recipe;
+
+  // constructor(private recipeService: RecipeService) {}
 
 
   ngOnInit() {
+    // console.log('Index Number: ' + this.index);
+    // this.myRecipe = this.recipeService.getRecipe(this.index);
   }
 
 
