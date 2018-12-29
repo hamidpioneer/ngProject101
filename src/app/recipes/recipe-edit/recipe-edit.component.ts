@@ -14,7 +14,6 @@ export class RecipeEditComponent implements OnInit {
   id: number;
   editMode = false;
   recipeForm: FormGroup;
-  myImagePath = "https://cdn-images-1.medium.com/max/800/1*D1EMOVrXqZtOYZJ2YTej-w.png";
 
   constructor(
     private route: ActivatedRoute, 
