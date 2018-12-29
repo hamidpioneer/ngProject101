@@ -1,0 +1,9 @@
+.edit-form {
+    padding: 1rem;
+    background: rgba(0,0255,0,.1);
+    border-radius: .5rem;
+}
+
+.btn-group button {
+    margin-right: .5rem;
+}
