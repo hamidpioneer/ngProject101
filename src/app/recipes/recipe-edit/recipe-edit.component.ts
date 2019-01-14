@@ -14,6 +14,7 @@ export class RecipeEditComponent implements OnInit {
   id: number;
   editMode = false;
   recipeForm: FormGroup;
+  myImagePath: string;
 
   constructor(
     private route: ActivatedRoute, 
@@ -91,7 +92,7 @@ export class RecipeEditComponent implements OnInit {
           Validators.required,
           Validators.pattern(/^[1-9]+[0-9]*$/)
         ])
-      });
+      })
     );
   }
 
