@@ -1,4 +1,3 @@
-import { DataStorageService } from './shared/data-storage.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -18,6 +17,8 @@ import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.com
 
 // Services
 import { ShoppingListService } from './shopping-list/shopping-list.service';
+import { DataStorageService } from './shared/data-storage.service';
+import { AuthService } from './auth/auth.service';
 
 // Directives
 import { DropdownDirective } from './shared/dropdown.directive';
@@ -50,7 +51,12 @@ import { SigninComponent } from './auth/signin/signin.component';
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [ShoppingListService, RecipeService, DataStorageService],
+  providers: [
+    ShoppingListService, 
+    RecipeService, 
+    DataStorageService, 
+    AuthService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
