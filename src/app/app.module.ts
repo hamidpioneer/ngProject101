@@ -1,3 +1,4 @@
+import { AuthGuard } from './auth/auth-guard.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -55,7 +56,8 @@ import { SigninComponent } from './auth/signin/signin.component';
     ShoppingListService, 
     RecipeService, 
     DataStorageService, 
-    AuthService
+    AuthService,
+    AuthGuard
   ],
   bootstrap: [AppComponent]
 })
